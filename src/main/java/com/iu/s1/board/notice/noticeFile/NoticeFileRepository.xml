@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="com.iu.s1.board.notice.noticeFile.NoticeFileRepository">
+	
+	<insert id="setInsert" parameterType="NoticeFileVO" >
+		insert into noticeFile (num, fileName, oriName)
+		values(#{num}, #{fileName}, #{oriName})
+	</insert>
+	
+	<select id="fileDown" parameterType="NoticeFileVO" resultType="NoticeFileVO">
+		select * from noticeFile where fileNum = #{fileNum}
+	</select>
+	
+</mapper>
