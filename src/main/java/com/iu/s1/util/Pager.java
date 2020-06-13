@@ -1,7 +1,7 @@
 package com.iu.s1.util;
 
 public class Pager {
-
+ 
 	private Long curPage;		//현재 페이지
 	private Integer perPage;	//한번에 보이는 페이지
 	
